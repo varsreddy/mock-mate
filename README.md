@@ -43,20 +43,6 @@ By default, the dashboard opens when the app starts.
 
 ---
 
-## 📁 Project Structure
-
-```
-├── app/
-│   ├── page.tsx            # Main entry (redirects to dashboard)
-│   ├── dashboard/          # Interview dashboard and modules
-│   ├── auth/               # Email-based login/signup
-│   └── components/         # Reusable UI components
-├── public/
-├── styles/
-├── utils/
-├── README.md
-```
-
 ---
 
 ## 🧪 How It Works
