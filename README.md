@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Mock Interviewer
 
-## Getting Started
+This is a **Next.js** project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The **AI Mock Interviewer** is a web application that simulates real-time mock interviews to help users prepare for job interviews. It features facial visibility detection using **MediaPipe**, personalized feedback, role-specific questions, and modern UI built with **TailwindCSS** and **Shadcn/UI**.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+* 🧠 AI-powered mock interview simulation
+* 🎥 Real-time webcam face visibility detection
+* 📋 Personalized question sets by role
+* 📊 Instant feedback with scoring
+* 🌙 Dark mode support
+* 💾 Local storage for responses/history
+
+---
+
+## 📦 Tech Stack
+
+* **Frontend:** Next.js, React.js, TailwindCSS, Shadcn/UI
+* **Face Detection:** MediaPipe API
+* **Backend:** Node.js, Express.js (planned)
+* **Database:** MongoDB (planned)
+* **Auth:** Email/OTP based (no JWT)
+
+---
+
+## 🛠️ Getting Started
+
+To run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser to use the app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+By default, the dashboard opens when the app starts.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── app/
+│   ├── page.tsx            # Main entry (redirects to dashboard)
+│   ├── dashboard/          # Interview dashboard and modules
+│   ├── auth/               # Email-based login/signup
+│   └── components/         # Reusable UI components
+├── public/
+├── styles/
+├── utils/
+├── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧪 How It Works
 
-## Deploy on Vercel
+* Starts with email-based login using OTP
+* Opens dashboard with role/category selection
+* Starts mock interview session with webcam-based face detection
+* Evaluates your responses and facial presence in real time
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧬 Future Enhancements
+
+* Integrate speech-to-text to analyze spoken answers
+* AI-based resume feedback
+* Interview history dashboard
+* Admin panel for adding custom questions
+
+---
+
+## 📤 Deployment
+
+Deploy this app easily on [Vercel](https://vercel.com/new).
+Refer to [Next.js deployment guide](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## 📚 Learn More
+
+* [Next.js Docs](https://nextjs.org/docs)
+* [TailwindCSS Docs](https://tailwindcss.com/docs)
+* [MediaPipe](https://google.github.io/mediapipe/solutions/face_detection.html)
